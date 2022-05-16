@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: left;    
+    color: #ebebeb;   
+    background-color: #000000; /*MUDAR COR*/
+    padding: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #606060;
+    text-decoration: none;
+}
+.menu {
+    padding: 15px;
+}
+.botoes {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/*Tipos de Cafés*/
+.boxTipos{
+    background-color: #000000;
+    padding: 50px;
+}
+.tipos {
+    margin: 20px -3px;
+}
+
+/*Assuntos*/
+.linha {
+    padding: 50px 0px;
+}
+
+.assuntos {
+    padding: 5px 5px;
+}
+
+/*Sobre a Coffeshop*/
+.sobre {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*Rodapé*/
+#footer{
+    background-color: #000000;
+    width: 100%;
+}
+.colunas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 50px;
+}
+.colunas h3, p, a{
+    margin: 0px;
+    padding-bottom: 15px;
+}
+.colunas ul{
+    list-style: none;
+}
+.text{
+    color: #ebebeb;
+}
+.icones{
+    max-width: 25px;
+}
