@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang ="pt-br" xmlns:th="http://thymeLeaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>The Coffeshop</title>
+    <title>Cardápio | The Coffeshop</title>
     <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link th:href="@{css/style.css}" rel="stylesheet">
 </head>
@@ -12,12 +12,12 @@
     <h1>The Coffeshop</h1> 
     <!--MENU-->
     <div class="menu">
-      <ul class="nav justify-content-end">
+      <ul class="nav justify-content-center">
         <li class="nav-item">
             <a class="nav-link" th:href="@{/home}">Início</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" th:href="@{/cardapio}">Cardápio</a>
+            <a class="nav-link" th:href="@{/cardapio}">Cardápio</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" th:href="@{/loja}">Loja</a>
@@ -39,11 +39,11 @@
           <div class="colunas">
             <div class="row justify-content-center">
               <div class="col">
-                <h3 class="text">Lorem ipsum</h3>
+                <h3 class="text">A The Coffeshop te convida a viver uma experiência com café</h3>
                 <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. Fusce ornare ut est non blandit. Cras sed lorem a nunc eleifend eleifend quis eget erat. In commodo, libero sit amet lacinia venenatis, lectus nibh vestibulum nisi, ut tempor enim metus eu ipsum. Aliquam sagittis imperdiet sem ac tincidunt.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. 
                 </p>
-                <a class="btn btn-dark btn-sm botoes" th:href="@{contato}" role="button">Contate-nos</a>
+                <a class="btn btn-dark btn-sm botoes" th:href="@{/contato}" role="button">Contate-nos</a>
               </div>
             </div>
           </div>
@@ -53,16 +53,16 @@
           <nav class="colunas">
             <ul class="">
                 <li>
-                  <a th:href="@{https://www.facebook.com/embuscadocodigo}" target="_blank"><img th:src="@{imagens/redes/facebook.png}" alt="Nosso Facebook" class="text icones"></a>
+                  <a th:href="@{https://www.facebook.com}" target="_blank"><img th:src="@{imagens/redes/facebook.png}" alt="Nosso Facebook" class="text icones"></a>
                 </li>
                 <li>
-                  <a th:href="@{https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w}" target="_blank"><img th:src="@{imagens/redes/youtube.png}" alt="Canal no YouTube" class="text icones"></a>
+                  <a th:href="@{https://www.youtube.com}" target="_blank"><img th:src="@{imagens/redes/youtube.png}" alt="Canal no YouTube" class="text icones"></a>
                 </li>
                 <li>
-                  <a th:href="@{https://www.instagram.com/embuscadocodigo/}" target="_blank"><img th:src="@{imagens/redes/instagram.png}" alt="Perfil no Instagram" class="text icones"></a>
+                  <a th:href="@{https://www.instagram.com}" target="_blank"><img th:src="@{imagens/redes/instagram.png}" alt="Perfil no Instagram" class="text icones"></a>
                 </li>
                 <li>
-                  <a th:href="@{https://www.twitter.com/embuscadocodigo/}" target="_blank"><img th:src="@{imagens/redes/twitter.png}" alt="Perfil no Twitter" class="text icones"></a>
+                  <a th:href="@{https://www.twitter.com}" target="_blank"><img th:src="@{imagens/redes/twitter.png}" alt="Perfil no Twitter" class="text icones"></a>
                 </li>
             </ul>
           </nav>
@@ -71,7 +71,7 @@
       <!--MENU-->
       <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active text" th:href="@{/cardapio}">Cardápio</a>
+            <a class="nav-link text" th:href="@{/cardapio}">Cardápio</a>
         </li>
         <li class="nav-item">
             <a class="nav-link text" th:href="@{/loja}">Loja</a>
@@ -84,17 +84,10 @@
         </li>
       </ul>
       <!--DIREITOS AUTORAIS-->
-      <div class="d-flex bd-highlight mb-10">
-        <div class="p-2 bd-highlight">
-          <p class="text-left font-weight-light text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="ml-auto p-2 bd-highlight">
-          <p class="text-right font-weight-light text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
+      <div class="direitos">
+        <p class="colunas text">
+          Direitos Reservados. Feito por alunos da Fatec Rubens Lara
+        </p>
       </div>
     </footer>
 

@@ -1,0 +1,10 @@
+Host
+ec2-3-229-11-55.compute-1.amazonaws.com
+Database
+df43dh1h7l97eo
+User
+zltmtoupngwsde
+Port
+5432
+Password
+e16c8449842bd4e60c85be203e658a4a38fe9f876e6cc6ab30cff41e6e41b564

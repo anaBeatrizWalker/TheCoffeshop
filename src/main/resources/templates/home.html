@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang ="pt-br" xmlns:th="http://thymeLeaf.org">
 <head>
     <meta charset="utf-8">
@@ -7,17 +7,16 @@
     <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link th:href="@{css/style.css}" rel="stylesheet">
 </head>
-
 <body>
     <h1>The Coffeshop</h1> 
     <!--MENU-->
     <div class="menu">
-      <ul class="nav justify-content-end">
+      <ul class="nav justify-content-center">
         <li class="nav-item">
             <a class="nav-link" th:href="@{/home}">Início</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" th:href="@{/cardapio}">Cardápio</a>
+            <a class="nav-link" th:href="@{/cardapio}">Cardápio</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" th:href="@{/loja}">Loja</a>
@@ -63,9 +62,9 @@
       <!--ASSUNTO 1-->
       <div class="row justify-content-center linha">
         <div class="col-4">
-          <h3 class="assuntos">Lorem ipsum</h3>
+          <h3 class="assuntos">Cafés</h3>
           <p class="text-justify assuntos">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. Fusce ornare ut est non blandit. Cras sed lorem a nunc eleifend eleifend quis eget erat. In commodo, libero sit amet lacinia venenatis, lectus nibh vestibulum nisi, ut tempor enim metus eu ipsum. Aliquam sagittis imperdiet sem ac tincidunt.
+            Servimos nossos cafés especiais frescos de nossa torrefação em Sheffield, Reino Unido. Fornecemos torrefadores em todo o mundo, inclusive na Itália, Alemanha, França, Índia e China. A nossa gama é limitada a torras de pequenos lotes e todos os nossos grãos são provenientes de todo o mundo.
           </p>
           <a class="btn btn-dark btn-sm" th:href="@{/loja}" role="button">Ir para loja</a>
         </div>
@@ -79,9 +78,9 @@
           <img th:src="@{imagens/assuntos/pexels-tegar-ditya-pragama-7438803.jpg}" class="rounded float-left assuntos" alt="...">
         </div>
         <div class="col-4">
-          <h3 class="assuntos">Lorem ipsum</h3>
+          <h3 class="assuntos">Grãos</h3>
           <p class="text-justify assuntos">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. Fusce ornare ut est non blandit. Cras sed lorem a nunc eleifend eleifend quis eget erat. In commodo, libero sit amet lacinia venenatis, lectus nibh vestibulum nisi, ut tempor enim metus eu ipsum. Aliquam sagittis imperdiet sem ac tincidunt.
+            O café nutrido é fabricado fresco todos os dias. Nós sempre torramos nosso café a uma altitude muito baixa, garantindo que o sabor permaneça fresco o ano todo. Estamos muito conscientes do ambiente em que estamos servindo nosso café. Temos o compromisso de fornecer café de origem ética, de comércio justo, socialmente responsável, fresco e delicioso.
           </p>
           <a class="btn btn-dark btn-sm" th:href="@{/loja}" role="button">Ir para loja</a>
         </div>
@@ -92,33 +91,33 @@
         <div class="card">
           <img class="card-img-top" th:src="@{imagens/sobre/pexels-malcolm-garret-4582820.jpg}" alt="Imagem de capa do card">
           <div class="card-body">
-            <h5 class="card-title">Lorem ipsum</h5>
+            <h5 class="card-title">Espaços aconchegantes</h5>
             <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. Fusce ornare ut est non blandit.
+              Desfrute sozinho em nossos espaços individuais, aproveitando o total sossego e conforto máximo enquanto você toma um chocolate quente ou um chá gelado bem calmante. Que tal?
             </p>
-            <a th:href="@{/sobre}" class="btn btn-dark btn-sm">Saiba mais</a>
+            <!--<a th:href="@{/sobre}" class="btn btn-dark btn-sm">Saiba mais</a>-->
           </div>
         </div>
         <!--2-->
         <div class="card">
           <img class="card-img-top" th:src="@{imagens/sobre/pexels-wewe-yang-4566718.jpg}" alt="Imagem de capa do card">
           <div class="card-body">
-            <h5 class="card-title">Lorem ipsum</h5>
+            <h5 class="card-title">Para família e amigos</h5>
             <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. Fusce ornare ut est non blandit.
+              Aproveite nossos espaços com mesas maiores para reunir toda a família em um café especial ou em um brunch de aniversário.
             </p>
-            <a th:href="@{/sobre}" class="btn btn-dark btn-sm">Saiba mais</a>
+            <!--<a th:href="@{/sobre}" class="btn btn-dark btn-sm">Saiba mais</a>-->
           </div>
         </div>
         <!--2-->
         <div class="card">
           <img class="card-img-top" th:src="@{imagens/sobre/pexels-changhee-kim-9167771.jpg}" alt="Imagem de capa do card">
           <div class="card-body">
-            <h5 class="card-title">Lorem ipsum</h5>
+            <h5 class="card-title">Livraria</h5>
             <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. Fusce ornare ut est non blandit.
+              Em parceria com diversas livrarias da cidade e também autores autônomos da região, disponibilizamos livros gratuitos, para venda e alugáveis em um espaço quieto e aconchegante. 
             </p>
-            <a th:href="@{/sobre}" class="btn btn-dark btn-sm">Saiba mais</a>
+            <!--<a th:href="@{/sobre}" class="btn btn-dark btn-sm">Saiba mais</a>-->
           </div>
         </div>
       </div>
@@ -131,11 +130,11 @@
           <div class="colunas">
             <div class="row justify-content-center">
               <div class="col">
-                <h3 class="text">Lorem ipsum</h3>
+                <h3 class="text">A The Coffeshop te convida a viver uma experiência com café</h3>
                 <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. Fusce ornare ut est non blandit. Cras sed lorem a nunc eleifend eleifend quis eget erat. In commodo, libero sit amet lacinia venenatis, lectus nibh vestibulum nisi, ut tempor enim metus eu ipsum. Aliquam sagittis imperdiet sem ac tincidunt.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus elit quis massa finibus lacinia. In ornare eros sed nibh venenatis, ornare pulvinar diam feugiat. 
                 </p>
-                <a class="btn btn-dark btn-sm botoes" th:href="@{contato}" role="button">Contate-nos</a>
+                <a class="btn btn-dark btn-sm botoes" th:href="@{/contato}" role="button">Contate-nos</a>
               </div>
             </div>
           </div>
@@ -145,16 +144,16 @@
           <nav class="colunas">
             <ul class="">
                 <li>
-                  <a th:href="@{https://www.facebook.com/embuscadocodigo}" target="_blank"><img th:src="@{imagens/redes/facebook.png}" alt="Nosso Facebook" class="text icones"></a>
+                  <a th:href="@{https://www.facebook.com}" target="_blank"><img th:src="@{imagens/redes/facebook.png}" alt="Nosso Facebook" class="text icones"></a>
                 </li>
                 <li>
-                  <a th:href="@{https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w}" target="_blank"><img th:src="@{imagens/redes/youtube.png}" alt="Canal no YouTube" class="text icones"></a>
+                  <a th:href="@{https://www.youtube.com}" target="_blank"><img th:src="@{imagens/redes/youtube.png}" alt="Canal no YouTube" class="text icones"></a>
                 </li>
                 <li>
-                  <a th:href="@{https://www.instagram.com/embuscadocodigo/}" target="_blank"><img th:src="@{imagens/redes/instagram.png}" alt="Perfil no Instagram" class="text icones"></a>
+                  <a th:href="@{https://www.instagram.com}" target="_blank"><img th:src="@{imagens/redes/instagram.png}" alt="Perfil no Instagram" class="text icones"></a>
                 </li>
                 <li>
-                  <a th:href="@{https://www.twitter.com/embuscadocodigo/}" target="_blank"><img th:src="@{imagens/redes/twitter.png}" alt="Perfil no Twitter" class="text icones"></a>
+                  <a th:href="@{https://www.twitter.com}" target="_blank"><img th:src="@{imagens/redes/twitter.png}" alt="Perfil no Twitter" class="text icones"></a>
                 </li>
             </ul>
           </nav>
@@ -163,7 +162,7 @@
       <!--MENU-->
       <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active text" th:href="@{/cardapio}">Cardápio</a>
+            <a class="nav-link text" th:href="@{/cardapio}">Cardápio</a>
         </li>
         <li class="nav-item">
             <a class="nav-link text" th:href="@{/loja}">Loja</a>
@@ -176,17 +175,10 @@
         </li>
       </ul>
       <!--DIREITOS AUTORAIS-->
-      <div class="d-flex bd-highlight mb-10">
-        <div class="p-2 bd-highlight">
-          <p class="text-left font-weight-light text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="ml-auto p-2 bd-highlight">
-          <p class="text-right font-weight-light text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
+      <div class="direitos">
+        <p class="colunas text">
+          Direitos Reservados. Feito por alunos da Fatec Rubens Lara
+        </p>
       </div>
     </footer>
 
