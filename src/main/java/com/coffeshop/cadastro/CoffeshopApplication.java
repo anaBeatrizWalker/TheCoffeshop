@@ -1,4 +1,4 @@
-package com.project.coffeshop;
+package com.coffeshop.cadastro;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,4 +9,5 @@ public class CoffeshopApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CoffeshopApplication.class, args);
 	}
+
 }

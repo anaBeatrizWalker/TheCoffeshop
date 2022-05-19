@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://thymeLeaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{css/principal.css}">
+	<title>Cadastro</title>
+</head>
+<body>
+	<h1>Cadastre uma comida no cardápio</h1>
+	
+	<!--FORMULARIO-->
+	<form th:action="@{comidas}" method="POST" th:object="${comida}">
+		Nome: <input type="text" th:field="*{nome}"><BR>
+		Descrição: <input type="text" th:field="*{descriçao}"><BR>
+		Preço: <input type="number" th:field="*{preço}"><BR>
+		Categoria: <input type="text" th:field="*{categoria}"><BR>
+		<input type="submit" value="Cadastrar">
+	</form>
+	<a th:href="@{/cardapio}">Voltar</a>
+</body>
+</html>

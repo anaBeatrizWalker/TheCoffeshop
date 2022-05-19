@@ -1,10 +1,10 @@
-package com.project.coffeshop;
+package com.coffeshop.cadastro;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CoffeshopApplicationTests {
+class CadastroApplicationTests {
 
 	@Test
 	void contextLoads() {

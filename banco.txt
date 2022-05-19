@@ -1,10 +1,7 @@
-Host
-ec2-3-229-11-55.compute-1.amazonaws.com
-Database
-df43dh1h7l97eo
-User
-zltmtoupngwsde
-Port
-5432
-Password
-e16c8449842bd4e60c85be203e658a4a38fe9f876e6cc6ab30cff41e6e41b564
+Host: ec2-34-231-177-125.compute-1.amazonaws.com
+Database: d3j5daug8vao2k
+User: xayixiqykujmzu
+Port: 5432
+Password: a4e3e23b86301ffd3f467e7418f6fd50a682e477b5e7bb6422bb348671a700f6
+URI: postgres://xayixiqykujmzu:a4e3e23b86301ffd3f467e7418f6fd50a682e477b5e7bb6422bb348671a700f6@ec2-34-231-177-125.compute-1.amazonaws.com:5432/d3j5daug8vao2k
+Heroku CLI: heroku pg:psql postgresql-shallow-03948 --app the-coffeshop

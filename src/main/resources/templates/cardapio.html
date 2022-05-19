@@ -14,7 +14,7 @@
     <div class="menu">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link" th:href="@{/home}">Início</a>
+            <a class="nav-link" th:href="@{/}">Início</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" th:href="@{/cardapio}">Cardápio</a>
@@ -30,6 +30,14 @@
         </li>
       </ul>
     </div>
+    
+    <!--MENU DE CADASTROS-->
+    <h2>Cadastrar produtos</h2>	
+	<ul>
+		<li> <a th:href="@{/bebidas}"> Cadastrar nova bebida </a> </li>
+		<li> <a th:href="@{/comidas}"> Cadastrar nova comida </a> </li>
+		<li> <a th:href="@{/cafes}"> Cadastrar novo café </a> </li>
+	</ul>
 
     <!--RODAPÉ-->
     <footer id="footer">
