@@ -3,19 +3,18 @@ package com.coffeshop.model;
 public class Comidas {
 	
 	private int id;
-	private String nome, descriçao, categoria;
-	private int preço;
+	private String nome, descricao, categoria, preco;
 	
 	public Comidas() {
 		
 	}
 
-	public Comidas(int id, String nome, String descriçao, String categoria, int preço) {
+	public Comidas(int id, String nome, String descricao, String categoria, String preco) {
 		this.id = id;
 		this.nome = nome;
-		this.descriçao = descriçao;
+		this.descricao = descricao;
 		this.categoria = categoria;
-		this.preço = preço;
+		this.preco = preco;
 	}
 
 	public int getId() {
@@ -34,12 +33,12 @@ public class Comidas {
 		this.nome = nome;
 	}
 
-	public String getDescriçao() {
-		return descriçao;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setDescriçao(String descriçao) {
-		this.descriçao = descriçao;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public String getCategoria() {
@@ -50,11 +49,11 @@ public class Comidas {
 		this.categoria = categoria;
 	}
 
-	public int getPreço() {
-		return preço;
+	public String getPreco() {
+		return preco;
 	}
 
-	public void setPreço(int preço) {
-		this.preço = preço;
+	public void setPreco(String preco) {
+		this.preco = preco;
 	}
 }

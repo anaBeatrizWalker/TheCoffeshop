@@ -1,25 +1,25 @@
 CREATE TABLE IF NOT EXISTS bebidas(
 	id serial primary key,
-	nome varchar(50),
-	descriçao varchar(300),
-	preço money,
-	categoria varchar(50),
-	tamanho varchar(10)
+	nome varchar(100),
+	descricao varchar(300),
+	preco varchar(5),
+	categoria varchar(100),
+	tamanho varchar(20)
 );
 
 CREATE TABLE IF NOT EXISTS comidas(
 	id serial primary key,
-	nome varchar(50),
-	descriçao varchar(300),
-	preço money,
-	categoria varchar(50)
+	nome varchar(100),
+	descricao varchar(300),
+	preco varchar(5),
+	categoria varchar(100)
 );
 
 CREATE TABLE IF NOT EXISTS cafes(
 	id serial primary key,
-	nome varchar(50),
-	descriçao varchar(300),
-	fornecedor varchar(50),
-	preço money,
-	gramas int
+	nome varchar(100),
+	descricao varchar(300),
+	fornecedor varchar(100),
+	preco varchar(5),
+	gramas varchar(7)
 );

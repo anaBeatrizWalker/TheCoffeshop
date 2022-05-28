@@ -1,22 +1,31 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://thymeLeaf.org">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" th:href="@{css/principal.css}">
-	<title>Cardápio | The Coffeshop</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link th:href="@{css/style.css}" rel="stylesheet">
+	<title>Cardápio - Cadastrar | The Coffeshop</title>
 </head>
 <body>
-	<h1>Cadastre um novo café no cardápio</h1>
+	<h1>The Coffeshop</h1>
 	
-	<!--FORMULARIO-->
-	<form th:action="@{cafes}" method="POST" th:object="${cafe}">
+	<h2>Cadastre um novo café no cardápio</h2>
+	
+	<form th:action="@{cafe}" method="POST" th:object="${cafe}">
 		Nome: <input type="text" th:field="*{nome}"><BR>
-		Descrição: <input type="text" th:field="*{descriçao}"><BR>
+		Descrição: <input type="text" th:field="*{descricao}"><BR>
 		Fornecedor: <input type="text" th:field="*{fornecedor}"><BR>
-		Preço: <input type="number" th:field="*{preço}"><BR>
-		Gramas: <input type="number" th:field="*{gramas}"><BR>
+		Preço: <input type="text" th:field="*{preco}"><BR>
+		Gramas: <input type="text" th:field="*{gramas}"><BR>
 		<input type="submit" value="Cadastrar">
 	</form>
-	<a th:href="@{/cardapio}">Voltar</a>
+	
+	<a th:href="@{/cafes}">Voltar</a>
+	
+	<!--Bootstrap-->
+	<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js}" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js}" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

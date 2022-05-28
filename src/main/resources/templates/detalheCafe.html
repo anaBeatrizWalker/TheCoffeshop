@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link th:href="@{css/style.css}" rel="stylesheet">
-    <title>Cardápio - Cadastrar | The Coffeshop</title>
+	<title>Cardápio de Cafés | The Coffeshop</title>
 </head>
 <body>
 	<h1>The Coffeshop</h1>
 	
-	<h2>Cadastrar bebida no cardápio</h2>
+	<p th:text="${'Nome: ' + nome}"></p>
+	<p th:text="${'Descrição: ' + descricao}"></p>
+	<p th:text="${'Fornecedor: ' + fornecedor}"></p>
+	<p th:text="${'Preço: ' + preco}"></p>
+	<p th:text="${'Gramas: ' + gramas}"></p>
+	<br>
 	
-	<form th:action="@{bebida}" method="POST" th:object="${bebida}">
-		Nome: <input type="text" th:field="*{nome}"><BR>
-		Descrição: <input type="text" th:field="*{descricao}"><BR>
-		Preço: <input type="text" th:field="*{preco}"><BR>
-		Categoria: <input type="text" th:field="*{categoria}"><BR>
-		Tamanho: <input type="text" th:field="*{tamanho}"><BR>
-		<input type="submit" value="Cadastrar">
-	</form>
-	
-	<a th:href="@{/bebidas}">Voltar</a>
+	<a th:href="@{/cafes}">Voltar</a>
 	
 	<!--Bootstrap-->
 	<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Cardápio | The Coffeshop</title>
     <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link th:href="@{css/style.css}" rel="stylesheet">
+    <title>Cardápio | The Coffeshop</title>
 </head>
 
 <body>
@@ -31,12 +31,11 @@
       </ul>
     </div>
     
-    <!--MENU DE CADASTROS-->
-    <h2>Cadastrar produtos</h2>	
+    <!--MENU DE PRODUTOS-->
 	<ul>
-		<li> <a th:href="@{/bebidas}"> Cadastrar nova bebida </a> </li>
-		<li> <a th:href="@{/comidas}"> Cadastrar nova comida </a> </li>
-		<li> <a th:href="@{/cafes}"> Cadastrar novo café </a> </li>
+		<li> <a th:href="@{/bebidas}"> Bebidas </a> </li>
+		<li> <a th:href="@{/comidas}"> Comidas </a> </li>
+		<li> <a th:href="@{/cafes}"> Cafés </a> </li>
 	</ul>
 
     <!--RODAPÉ-->
