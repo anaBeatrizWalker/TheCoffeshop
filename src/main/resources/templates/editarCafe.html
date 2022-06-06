@@ -10,18 +10,22 @@
 <body>
 	<h1>The Coffeshop</h1>
 	
-	<h2>Editar café do cardápio</h2>
+	<div class="divform">
+	
+	<h2 class="h2form">Editar café do cardápio</h2>
 	
 	<form th:action="@{'/editar/cafe/' + ${id}}" method="POST" th:object="${cafe}">
-		Nome: <input type="text" th:field="*{nome}"><BR>
-		Descrição: <input type="text" th:field="*{descricao}"><br>
-		Fornecedor: <input type="text" th:field="*{fornecedor}"><br>
-		Preço: <input type="text" th:field="*{preco}"><br>
-		Gramas: <input type="text" th:field="*{gramas}"><br>
+		Nome: <input type="text" th:field="*{nome}" required placeholder="Digite o nome"><BR>
+		Descrição: <input type="text" th:field="*{descricao}" required placeholder="Digite a descrição"><br>
+		Fornecedor: <input type="text" th:field="*{fornecedor}" required placeholder="Digite o fornecedor"><br>
+		Preço: <input type="text" th:field="*{preco}" required placeholder="Digite o preço"><br>
+		Gramas: <input type="text" th:field="*{gramas}" required placeholder="Digite as gramas"><br>
 		<input type="submit" value="Salvar">
 	</form>
 	
-	<a th:href="@{/cafes}">Voltar</a>
+	</div>
+	
+	<a class="linkVoltar" th:href="@{/cafes}">Voltar</a>
 	
 	<!--Bootstrap-->
 	<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

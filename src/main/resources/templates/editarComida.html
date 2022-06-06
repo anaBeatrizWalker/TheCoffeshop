@@ -10,17 +10,21 @@
 <body>
 	<h1>The Coffeshop</h1>
 	
-	<h2>Editar comida do cardápio</h2>
+	<div class="divform">
+	
+	<h2 class="h2form">Editar comida do cardápio</h2>
 	
 	<form th:action="@{'/editar/comida/' + ${id}}" method="POST" th:object="${comida}">
-		Nome: <input type="text" th:field="*{nome}"><BR>
-		Descrição: <input type="text" th:field="*{descricao}"><br>
-		Categoria: <input type="text" th:field="*{categoria}"><br>
-		Preço: <input type="text" th:field="*{preco}"><br>
+		Nome: <input type="text" th:field="*{nome}" required placeholder="Digite o nome"><BR>
+		Descrição: <input type="text" th:field="*{descricao}" required placeholder="Digite a descrição"><br>
+		Preço: <input type="text" th:field="*{preco}" required placeholder="Digite o preço"><br>
+		Categoria: <input type="text" th:field="*{categoria}" required placeholder="Digite a categoria"><br>
 		<input type="submit" value="Salvar">
 	</form>
 	
-	<a th:href="@{/comidas}">Voltar</a>
+	</div>
+	
+	<a class="linkVoltar" th:href="@{/comidas}">Voltar</a>
 	
 	<!--Bootstrap-->
 	<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

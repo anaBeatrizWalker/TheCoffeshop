@@ -86,3 +86,189 @@ a:hover{
 .direitos p{
     font-weight: lighter;
 }
+
+
+/*listaBebidas*/
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*forms*/
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;   
+    
+}
+  
+input[type=text]:focus {
+    border: 3px solid #555;
+    background-color: #cecdcd;
+}
+
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #949494;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold; 
+    
+}
+
+input[type=submit]:hover {
+  background-color: #cecdcd;
+  color: black;
+  font-weight: bold; 
+   
+}
+
+fieldset{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc; 
+  outline: none;   
+}
+
+.h2form{
+	text-align: center;
+}
+.divform {
+    width: 50%;
+    border: 3px solid #555;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px; 
+    margin: auto;  
+    font-weight: bold; 
+    margin-top: 20px;
+      
+ }
+
+
+/*Links*/
+
+.linkFormOut {
+  background-color: #949494;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  width: 100%; 
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold; 
+  font-size: 20px;    
+    
+}
+
+.linkFormOut:hover {
+  background-color: #cecdcd;
+  color: black;
+  font-weight: bold; 
+   
+}
+
+.linkFormIn {
+  background-color: #949494;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  width: 100%; 
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;     
+    
+}
+
+.linkFormIn:hover {
+  background-color: #cecdcd;
+  color: black;
+  font-weight: bold; 
+   
+}
+
+.linkVoltar {
+  background-color: #1b1b1b;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;     
+    
+}
+
+.linkVoltar:hover {
+  
+  background-color: black;
+  font-weight: bold; 
+   color: white;
+}
+
+.linkNome {
+  
+  color: black;
+  padding: 12px 20px;
+  text-align: center;
+   text-decoration: underline;
+  display: inline-block; 
+  width: 100%; 
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;     
+    
+}
+
+.linkNome:hover {
+  color: blue; 
+   
+}

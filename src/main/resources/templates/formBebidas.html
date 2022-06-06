@@ -10,18 +10,22 @@
 <body>
 	<h1>The Coffeshop</h1>
 	
-	<h2>Cadastrar bebida no cardápio</h2>
+	<div class="divform">
+	
+	<h2 class="h2form">Cadastrar bebida no cardápio</h2>	
 	
 	<form th:action="@{bebida}" method="POST" th:object="${bebida}">
-		Nome: <input type="text" th:field="*{nome}"><BR>
-		Descrição: <input type="text" th:field="*{descricao}"><BR>
-		Preço: <input type="text" th:field="*{preco}"><BR>
-		Categoria: <input type="text" th:field="*{categoria}"><BR>
-		Tamanho: <input type="text" th:field="*{tamanho}"><BR>
+		Nome: <input type="text" th:field="*{nome}" required placeholder="Digite o nome"><BR>
+		Descrição: <input type="text" th:field="*{descricao}" required placeholder="Digite a descrição"><BR>
+		Preço: <input type="text" th:field="*{preco}" required placeholder="Digite o preço"><BR>
+		Categoria: <input type="text" th:field="*{categoria}" required placeholder="Digite a categoria"><BR>
+		Tamanho: <input type="text" th:field="*{tamanho}" required placeholder="Digite o tamanho"><BR>
 		<input type="submit" value="Cadastrar">
 	</form>
 	
-	<a th:href="@{/bebidas}">Voltar</a>
+	</div>
+	
+	<a class="linkVoltar" th:href="@{/bebidas}">Voltar</a>
 	
 	<!--Bootstrap-->
 	<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

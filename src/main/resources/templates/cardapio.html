@@ -31,12 +31,14 @@
       </ul>
     </div>
     
-    <!--MENU DE PRODUTOS-->
-	<ul>
-		<li> <a th:href="@{/bebidas}"> Bebidas </a> </li>
-		<li> <a th:href="@{/comidas}"> Comidas </a> </li>
-		<li> <a th:href="@{/cafes}"> Cafés </a> </li>
-	</ul>
+    <!--MENU DE PRODUTOS-->  
+    
+    <img th:src="@{imagens/cardapio/chefe.png}" alt="Chefe" width="351" height="364">
+      
+	
+		<a th:href="@{/bebidas}"><img th:src="@{imagens/cardapio/cardapio_bebida.png}" alt="Bebidas" width="351" height="364"></a> 
+		 <a th:href="@{/comidas}"><img th:src="@{imagens/cardapio/cardapio_comida.png}" alt="Comidas" width="351" height="364"></a> 
+		 <a th:href="@{/cafes}"><img th:src="@{imagens/cardapio/cardapio_cafe.png}" alt="Cafés" width="351" height="364"></a>
 
     <!--RODAPÉ-->
     <footer id="footer">

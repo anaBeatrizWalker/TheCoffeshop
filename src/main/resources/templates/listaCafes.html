@@ -10,8 +10,8 @@
 <body>
 	<h1>The Coffeshop</h1>
 	
-	<a th:href="@{/cafe}"> Cadastrar um novo café </a>
-	<table>
+	<a class="linkFormOut" th:href="@{/cafe}"> Cadastrar um novo café </a>
+	<table id="customers">
 		<thead>
 			<tr>
 				<td><b>Código</b></td>
@@ -29,14 +29,14 @@
 			<tr th:each="cafe : ${cafes}">
 				<td th:text="${cafe.id}"></td>
 				<td>
-					<a th:href="@{'cafe/' + ${cafe.id}}" th:text="${cafe.nome}"></a> <!--ao clicar no nome vai para o perfil do cafe-->
+					<a class="linkNome"  th:href="@{'cafe/' + ${cafe.id}}" th:text="${cafe.nome}"></a> <!--ao clicar no nome vai para o perfil do cafe-->
 				</td>
 				<td th:text="${cafe.descricao}"></td>
 				<td th:text="${cafe.fornecedor}"></td>
 				<td th:text="${cafe.preco}"></td>
 				<td th:text="${cafe.gramas}"></td>
 				<td>
-					<a th:href="@{'editar/cafe/' + ${cafe.id}}">Editar</a>
+					<a class="linkFormIn" th:href="@{'editar/cafe/' + ${cafe.id}}">Editar</a>
 				</td>
 				<td>
 					<form th:action="@{'apagar/cafe/' + ${cafe.id}}" method=post>
@@ -45,9 +45,9 @@
 				</td>
 			</tr>
 		</tbody>
-	<table>
+	</table>
 	
-	<a th:href="@{/cardapio}">Voltar</a>
+	<a class="linkVoltar" th:href="@{/cardapio}">Voltar</a>
 	
 	<!--Bootstrap-->
 	<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
